@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故事总览 - 射雕英雄传</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="font-sans bg-stone-50 text-stone-800">
+    <!-- 顶部导航 -->
+    <header class="bg-amber-900/90 text-stone-100 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L14.5 9H21L15.5 13.5L17.5 20.5L12 16L6.5 20.5L8.5 13.5L3 9H9.5L12 2Z" fill="currentColor"/>
+                    </svg>
+                    <a href="../index.html" class="text-2xl font-bold tracking-wider">射雕英雄传</a>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="story.html" class="text-amber-200 border-b-2 border-amber-200 pb-1">故事</a>
+                    <a href="characters.html" class="hover:text-amber-200 transition-colors">人物</a>
+                    <a href="martial_arts.html" class="hover:text-amber-200 transition-colors">武学</a>
+                    <a href="jianghu.html" class="hover:text-amber-200 transition-colors">江湖</a>
+                    <a href="culture.html" class="hover:text-amber-200 transition-colors">文化</a>
+                    <a href="appreciation.html" class="hover:text-amber-200 transition-colors">赏析</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-stone-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </nav>
+        </div>
+
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-amber-900 text-stone-100">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="story.html" class="py-2 text-amber-200">故事</a>
+                <a href="characters.html" class="py-2 hover:text-amber-200 transition-colors">人物</a>
+                <a href="martial_arts.html" class="py-2 hover:text-amber-200 transition-colors">武学</a>
+                <a href="jianghu.html" class="py-2 hover:text-amber-200 transition-colors">江湖</a>
+                <a href="culture.html" class="py-2 hover:text-amber-200 transition-colors">文化</a>
+                <a href="appreciation.html" class="py-2 hover:text-amber-200 transition-colors">赏析</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <div class="bg-amber-900/10 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">故事背景与剧情总览</h1>
+            <p class="text-xl text-stone-600 max-w-3xl mx-auto">
+                深入了解《射雕英雄传》所处的时代背景与贯穿全书的精彩剧情
+            </p>
+        </div>
+    </div>
+
+    <!-- 主要内容区域 -->
+    <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <!-- START_ADDED_CONTENT_FROM_TASK_1cNaD (Content follows based on reference) -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold mb-6 border-b border-amber-300 pb-3 text-amber-800">时代背景</h2>
+            <p class="text-lg text-stone-700 mb-6 leading-relaxed">
+                《射雕英雄传》的故事展开于南宋宁宗年间（公元1199年起），一个华夏大地饱受外族侵凌、王朝风雨飘摇的时代。金庸先生以史实为骨架，将真实历史人物与事件巧妙融入武侠传奇，营造出波澜壮阔的史诗氛围。
+            </p>
+
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-8 ring-1 ring-amber-100">
+                <h3 class="text-2xl font-semibold mb-4 text-amber-700">政治格局：三国鼎立与力量消长</h3>
+                <p class="mb-4 text-stone-600 leading-relaxed">
+                    小说所处的时代，是南宋、金国、蒙古三方势力激烈角逐的关键时期：
+                </p>
+                <ul class="list-disc list-inside pl-4 space-y-3 text-stone-600 mb-6 leading-relaxed">
+                    <li>
+                        <strong>南宋王朝：偏安江南，积弱不振。</strong> 自“靖康之耻”（1127年）后，北宋覆灭，皇室南迁，建立了南宋。尽管经济文化繁荣，但统治者多安于现状，重文抑武，对外采取妥协退让的政策。朝堂之上党争不断，权臣当道（如韩侂胄），对外主战派与主和派争论不休。小说伊始的牛家村惨案，便源于丘处机追击金人细作，牵连郭杨两家，是宋金民族矛盾在底层的缩影。郭靖、杨康的名字——“靖”“康”二字，直指那段屈辱的历史，是作者对民族伤痛的深刻印记。
+                    </li>
+                    <li>
+                        <strong>金国：由盛转衰，内忧外患。</strong> 金朝女真人曾灭辽攻宋，盛极一时。但在《射雕》时期，金国已显颓势，内部统治腐败，外部受到日益强大的蒙古威胁。小说中的金国六王爷完颜洪烈，代表了金朝残余的侵略野心和阴谋活动，他收养杨康，意图利用汉人对抗汉人，加剧了民族悲剧。
+                    </li>
+                    <li>
+                        <strong>蒙古帝国：异军突起，势不可挡。</strong> 成吉思汗（铁木真）统一蒙古各部，建立了强大的游牧帝国。蒙古骑兵彪悍善战，迅速扩张，先后攻打西夏、金国，并向西发动了震惊世界的西征。郭靖幼年便在蒙古大漠长大，亲历了成吉思汗的崛起与军事征伐，这段经历深刻影响了他对国家民族的认知，并最终促使他选择与蒙古的侵宋野心决裂。蒙古的强大武力是悬在南宋头顶最直接的威胁，也是推动小说后期郭靖承担“侠之大者”责任的历史背景。
+                    </li>
+                </ul>
+                <div class="my-8 flex justify-center overflow-x-auto">
+                    <svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" class="max-w-full h-auto">
+                        <style>
+                            .node { fill: #fff5e6; stroke: #d69e2e; stroke-width: 1.5px; }
+                            .label { font-family: 'Noto Sans SC', sans-serif; font-size: 14px; text-anchor: middle; fill: #78350f; font-weight: 500;}
+                            .arrow-line { stroke: #92400e; stroke-width: 2px; marker-end: url(#arrowheadStory); }
+                            .conflict-line { stroke: #c53030; stroke-width: 2px; marker-end: url(#arrowheadStoryConflict); }
+                            .legend-item-text { font-family: 'Noto Sans SC', sans-serif; font-size: 12px; fill: #44403c; }
+                        </style>
+                        <defs>
+                            <marker id="arrowheadStory" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="#92400e"></polygon>
+                            </marker>
+                             <marker id="arrowheadStoryConflict" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="#c53030"></polygon>
+                            </marker>
+                        </defs>
+
+                        <rect class="node" x="50" y="100" width="100" height="50" rx="8"></rect>
+                        <text class="label" x="100" y="130">南宋</text>
+
+                        <rect class="node" x="250" y="100" width="100" height="50" rx="8"></rect>
+                        <text class="label" x="300" y="130">金国</text>
+
+                        <rect class="node" x="450" y="100" width="100" height="50" rx="8"></rect>
+                        <text class="label" x="500" y="130">蒙古</text>
+
+                        <line class="conflict-line" x1="150" y1="125" x2="240" y2="125"></line>
+                        <text class="label" x="200" y="115" font-size="11px" fill="#c53030">军事冲突</text>
+
+                        <line class="conflict-line" x1="350" y1="125" x2="440" y2="125"></line>
+                        <text class="label" x="400" y="115" font-size="11px" fill="#c53030">军事压力</text>
+                        
+                        <path class="conflict-line" d="M125,150 Q300,180 475,150" fill="none" />
+                        <text class="label" x="300" y="190" font-size="11px" fill="#c53030">蒙古对南宋构成主要威胁</text>
+
+                        <text class="legend-item-text" x="50" y="250" font-weight="bold">图例：</text>
+                        <line class="conflict-line" x1="50" y1="270" x2="80" y2="270"></line>
+                        <text class="legend-item-text" x="90" y="274">军事冲突/威胁</text>
+                    </svg>
+                </div>
+                <p class="text-stone-500 text-center text-sm italic mt-2">图1：南宋末年宋、金、蒙古三国势力简图</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6 ring-1 ring-amber-100">
+                <h3 class="text-2xl font-semibold mb-4 text-amber-700">社会面貌与民族矛盾：家国之痛与侠义担当</h3>
+                <p class="mb-4 text-stone-600 leading-relaxed">
+                    南宋末年社会贫富差距大，百姓生活困苦。小说通过郭杨两家的遭遇，直观展现了金兵南侵给普通百姓带来的深重灾难和国破家亡的痛苦。民族矛盾是贯穿全书的一条重要线索，金人对汉人的压迫、蒙古对南宋的威胁，激化了中原武林的抗争意识。全真教、丐帮等中原武林势力，虽身处江湖，却不忘家国大义，积极投身抗金、抗蒙事业。
+                </p>
+                <p class="text-stone-600 leading-relaxed">
+                    小说中的“武穆遗书”（相传为岳飞所著兵书），不仅是推动情节发展的关键道具，更是民族英雄岳飞精忠报国的象征，寄托了南宋遗民渴望收复失地的民族情感。郭靖最终领悟“侠之大者，为国为民”的真谛，正是那个时代背景下个人英雄对国家民族责任的最高担当。这种侠义精神，是金庸武侠对传统文化中“士”精神的传承与升华。
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold mb-6 mt-12 border-b border-amber-300 pb-3 text-amber-800">剧情梗概</h2>
+            <p class="text-lg text-stone-700 mb-6 leading-relaxed">
+                《射雕英雄传》的情节波澜壮阔，线索繁多却主次分明，围绕郭靖的成长和郭杨两家的命运悲剧展开,直至郭靖成为武林宗师，家国大义初显。
+            </p>
+            <div class="space-y-4 text-stone-600 leading-relaxed bg-white p-6 rounded-lg shadow-lg ring-1 ring-amber-100">
+                <p>
+                    故事开端于南宋宁宗年间临安郊外的<strong>牛家村</strong>。忠良之后郭啸天与杨铁心结为兄弟，约定子女结为夫妻或兄弟。金国六王爷完颜洪烈垂涎杨妻包惜弱美貌，与宋朝奸臣勾结，设计杀害郭啸天，杨铁心突围失踪，包惜弱被完颜洪烈欺骗掳走。郭妻李萍逃往蒙古，艰苦生下遗腹子<strong>郭靖</strong>；包惜弱在金国生下<strong>杨康</strong>，在完颜洪烈的溺爱下长大，认贼作父。
+                </p>
+                 <p>
+                    十八年后，郭靖在蒙古大漠成长为忠厚朴实、武艺初成的少年，得到“江南七怪”传授武艺，并得“全真七子”之一马钰指点内功，与蒙古公主华筝有婚约。江南七怪与丘处机因误会郭杨后人品性，约定在嘉兴<strong>醉仙楼</strong>比武，验证徒弟武功高低。
+                </p>
+                <p>
+                    郭靖南下江南，初入江湖，便在张家口结识了女扮男装的<strong>黄蓉</strong>。黄蓉是“东邪”黄药师之女，机智聪慧，古灵精怪。两人一见如故，情愫暗生。郭靖的憨厚与黄蓉的灵动形成了完美的互补。他们一同闯荡江湖，经历了丐帮君山大会、铁掌峰遇险等诸多事件。
+                </p>
+                <p>
+                    与此同时，杨康在金国锦衣玉食，养尊处优。他在赵王府巧遇为父比武招亲的穆念慈，两人情根深种，但杨康贪恋富贵，不肯认父，其生父杨铁心与母亲包惜弱重逢后又悲惨死去。杨康拜梅超风为师，后又投靠“西毒”欧阳锋，一步步走向邪恶歧途，成为金国的帮凶。穆念慈虽深爱杨康，却不与其同流合污，坚韧地独自面对坎坷命运。
+                </p>
+                <p>
+                     江湖之中，围绕绝世武学《<strong>九阴真经</strong>》和传说中的《<strong>武穆遗书</strong>》展开了腥风血雨的争夺。郭靖黄蓉卷入其中，结识了“北丐”洪七公、“老顽童”周伯通等人。洪七公贪吃，黄蓉厨艺高超，以美食打动洪七公，使其将“<strong>降龙十八掌</strong>”和“<strong>打狗棒法</strong>”（部分）传授给郭靖和黄蓉。郭靖又因缘际会，在周伯通处习得了全本《九阴真经》和“左右互搏术”、“空明拳”，武功突飞猛进。
+                </p>
+                 <p>
+                    在<strong>桃花岛</strong>上，郭靖黄蓉经历了黄药师的考验与黄蓉的求亲风波。欧阳锋带侄儿欧阳克前来求亲，与郭靖展开较量。郭靖凭借扎实的内功和所学武功通过了黄药师的考验，与黄蓉情意更深。然而，岛上发生了江南七怪遇害的惨案，种种迹象指向黄药师。郭靖悲愤之下误会黄蓉父女是仇人，两人情海生波，暂分南北。
+                </p>
+                 <p>
+                    郭靖离开桃花岛，回到蒙古，面临与华筝的婚约以及成吉思汗即将攻宋的抉择。民族大义的冲突让郭靖痛苦不堪，最终选择拒绝成吉思汗，其母李萍为全儿子忠义自尽。郭靖悲痛欲绝，黯然回到中原。
+                </p>
+                <p>
+                     在经历了一系列磨难和误会澄清后，郭靖黄蓉重逢。他们回到嘉兴，在<strong>铁枪庙</strong>中与欧阳锋、杨康等人对峙，揭露了杨康杀害江南五怪嫁祸黄药师的罪行。杨康最终因中毒身亡，结束了其悲剧的一生。穆念慈伤心离去，独自生下与杨康的儿子杨过。
+                </p>
+                 <p>
+                    故事最终引向第二次<strong>华山论剑</strong>。郭靖的武功已臻化境，他与黄蓉一同参与论剑，亲历了五绝（黄药师、洪七公、欧阳锋、一灯大师、周伯通）之间的新一轮较量。虽然此次论剑并未严格排名，但郭靖的实力已得到认可。他以“侠之大者”的姿态，与黄蓉携手，立志抵抗蒙古南侵，守护南宋百姓。小说以郭靖黄蓉共同面对国家危难的局面作结，为后续的《神雕侠侣》埋下了伏笔。
+                </p>
+            </div>
+        </section>
+
+         <section class="mb-10">
+            <h2 class="text-3xl font-bold mb-6 mt-12 border-b border-amber-300 pb-3 text-amber-800">关键情节发展阶段的深入概述</h2>
+            <p class="text-lg text-stone-700 mb-6 leading-relaxed">
+                 《射雕英雄传》的主要情节可以大致分为几个阶段，每个阶段都标志着主角郭靖的成长和故事线的推进：
+            </p>
+
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-8 ring-1 ring-amber-100">
+                <h3 class="text-2xl font-semibold mb-4 text-amber-700">3.1 牛家村风波与郭杨初分（第一至第二回）</h3>
+                <p class="text-stone-600 mb-4 leading-relaxed">
+                    故事的开篇，如一幅古朴的水墨画，描绘了南宋临安郊外牛家村的田园景象。郭啸天与杨铁心，两位忠义之士，在此过着宁静生活。他们结义...
+                    <!-- The rest of this section from the reference is incomplete, as indicated by the ellipsis -->
+                </p>
+                 <p class="text-stone-500 italic leading-relaxed">
+                    注：此章节在参考资料中不完整，仅包含开头部分。后续关键情节的详细拆解将在此处补充。
+                </p>
+            </div>
+            <div class="bg-stone-100 p-6 rounded-lg text-stone-600 italic shadow leading-relaxed">
+                <p>（更多关键情节发展阶段的深入概述，如郭靖的成长历程、黄蓉的江湖游历、九阴真经的争夺、武穆遗书的线索、桃花岛风云、华山论剑等，将根据参考资料逐步补充完整。）</p>
+            </div>
+        </section>
+         <!-- END_ADDED_CONTENT_FROM_TASK_1cNaD -->
+    </div>
+
+
+    <!-- 页脚 -->
+    <footer class="bg-stone-900 text-stone-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-stone-100">射雕英雄传</h3>
+                    <p class="mb-4 text-sm">
+                        金庸先生的不朽经典，一部荡气回肠的武侠传奇
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-stone-100">快速链接</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../index.html" class="hover:text-amber-300 transition-colors">首页</a></li>
+                        <li><a href="story.html" class="hover:text-amber-300 transition-colors">故事</a></li>
+                        <li><a href="characters.html" class="hover:text-amber-300 transition-colors">人物</a></li>
+                        <li><a href="martial_arts.html" class="hover:text-amber-300 transition-colors">武学</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-stone-100">更多内容</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="jianghu.html" class="hover:text-amber-300 transition-colors">江湖</a></li>
+                        <li><a href="culture.html" class="hover:text-amber-300 transition-colors">文化</a></li>
+                        <li><a href="appreciation.html" class="hover:text-amber-300 transition-colors">赏析</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-stone-100">关于本站</h3>
+                    <p class="mb-4 text-sm">
+                        本网站致力于为金庸武侠小说《射雕英雄传》爱好者提供全面的资料与赏析
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-t border-stone-700 mt-8 pt-8 text-center text-xs text-stone-400">
+                <p>© <span id="current-year">2024</span> 射雕英雄传资料网 | 本站内容仅供学习参考，相关版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <!-- <script src="../main.js"></script> No external main.js needed if all JS is inline -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人物志 - 射雕英雄传</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Custom styles for the sidebar */
+        /* Add styles specific to characters page layout here if necessary */
+        .character-link.active {
+            /* Style for active link, managed by JS, but can define base if needed */
+        }
+    </style>
+</head>
+<body class="font-sans bg-stone-50 text-stone-800">
+    <!-- 顶部导航 -->
+    <header class="bg-amber-900/90 text-stone-100 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L14.5 9H21L15.5 13.5L17.5 20.5L12 16L6.5 20.5L8.5 13.5L3 9H9.5L12 2Z" fill="currentColor"/>
+                    </svg>
+                    <a href="../index.html" class="text-2xl font-bold tracking-wider">射雕英雄传</a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="story.html" class="hover:text-amber-200 transition-colors">故事</a>
+                    <a href="characters.html" class="text-amber-200 border-b-2 border-amber-200 pb-1">人物</a>
+                    <a href="martial_arts.html" class="hover:text-amber-200 transition-colors">武学</a>
+                    <a href="jianghu.html" class="hover:text-amber-200 transition-colors">江湖</a>
+                    <a href="culture.html" class="hover:text-amber-200 transition-colors">文化</a>
+                    <a href="appreciation.html" class="hover:text-amber-200 transition-colors">赏析</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-stone-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-amber-900 text-stone-100">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="story.html" class="py-2 hover:text-amber-200 transition-colors">故事</a>
+                <a href="characters.html" class="py-2 text-amber-200">人物</a>
+                <a href="martial_arts.html" class="py-2 hover:text-amber-200 transition-colors">武学</a>
+                <a href="jianghu.html" class="py-2 hover:text-amber-200 transition-colors">江湖</a>
+                <a href="culture.html" class="py-2 hover:text-amber-200 transition-colors">文化</a>
+                <a href="appreciation.html" class="py-2 hover:text-amber-200 transition-colors">赏析</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <div class="bg-amber-900/10 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">人物志</h1>
+            <p class="text-xl text-stone-600 max-w-3xl mx-auto">
+                群星璀璨的射雕英雄传人物世界
+            </p>
+        </div>
+    </div>
+
+    <!-- 主要内容区域 -->
+    <div class="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- 左侧导航栏 -->
+        <aside class="md:col-span-1 bg-white rounded-lg shadow-md p-6 h-min sticky top-28">
+            <h2 class="text-2xl font-bold mb-4 text-amber-800 border-b border-amber-200 pb-2">人物导航</h2>
+            <nav>
+                <ul id="character-sidebar-nav" class="space-y-2 text-stone-700">
+                    <!-- Navigation will be dynamically populated here by JavaScript -->
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- 右侧内容显示区域 -->
+        <main class="md:col-span-3 bg-white rounded-lg shadow-md p-6">
+            <div id="character-content" class="prose max-w-none">
+                <!-- Character content will be loaded here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-stone-900 text-stone-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-stone-100">射雕英雄传</h3>
+                    <p class="mb-4">
+                        金庸先生的不朽经典，一部荡气回肠的武侠传奇
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-amber-300 transition-colors">首页</a></li>
+                        <li><a href="story.html" class="hover:text-amber-300 transition-colors">故事</a></li>
+                        <li><a href="characters.html" class="hover:text-amber-300 transition-colors">人物</a></li>
+                        <li><a href="martial_arts.html" class="hover:text-amber-300 transition-colors">武学</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">更多内容</h3>
+                    <ul class="space-y-2">
+                        <li><a href="jianghu.html" class="hover:text-amber-300 transition-colors">江湖</a></li>
+                        <li><a href="culture.html" class="hover:text-amber-300 transition-colors">文化</a></li>
+                        <li><a href="appreciation.html" class="hover:text-amber-300 transition-colors">赏析</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">关于本站</h3>
+                    <p class="mb-4">
+                        本网站致力于为金庸武侠小说《射雕英雄传》爱好者提供全面的资料与赏析
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-t border-stone-700 mt-8 pt-8 text-center text-sm">
+                <p>© 2023 射雕英雄传资料网 | 本站内容仅供学习参考，相关版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="characters.js" defer></script>
+</body>
+</html>

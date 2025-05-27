@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>江湖世界 - 射雕英雄传</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="font-sans bg-stone-50 text-stone-800">
+    <!-- 顶部导航 -->
+    <header class="bg-amber-900/90 text-stone-100 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L14.5 9H21L15.5 13.5L17.5 20.5L12 16L6.5 20.5L8.5 13.5L3 9H9.5L12 2Z" fill="currentColor"/>
+                    </svg>
+                    <a href="../index.html" class="text-2xl font-bold tracking-wider">射雕英雄传</a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="story.html" class="hover:text-amber-200 transition-colors">故事</a>
+                    <a href="characters.html" class="hover:text-amber-200 transition-colors">人物</a>
+                    <a href="martial_arts.html" class="hover:text-amber-200 transition-colors">武学</a>
+                    <a href="jianghu.html" class="text-amber-200 border-b-2 border-amber-200 pb-1">江湖</a>
+                    <a href="culture.html" class="hover:text-amber-200 transition-colors">文化</a>
+                    <a href="appreciation.html" class="hover:text-amber-200 transition-colors">赏析</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-stone-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-amber-900 text-stone-100">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="story.html" class="py-2 hover:text-amber-200 transition-colors">故事</a>
+                <a href="characters.html" class="py-2 hover:text-amber-200 transition-colors">人物</a>
+                <a href="martial_arts.html" class="py-2 hover:text-amber-200 transition-colors">武学</a>
+                <a href="jianghu.html" class="py-2 text-amber-200">江湖</a>
+                <a href="culture.html" class="py-2 hover:text-amber-200 transition-colors">文化</a>
+                <a href="appreciation.html" class="py-2 hover:text-amber-200 transition-colors">赏析</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <div class="bg-amber-900/10 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">江湖世界</h1>
+            <p class="text-xl text-stone-600 max-w-3xl mx-auto">
+                《射雕英雄传》中的江湖格局、势力分布与武林规则
+            </p>
+        </div>
+    </div>
+
+    <!-- 江湖概述 -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6 border-b border-amber-200 pb-2">江湖概述</h2>
+            
+            <p class="text-lg mb-4">
+                《射雕英雄传》中的"江湖"是一个相对独立于官方政权之外的社会空间，有着自己的规则、伦理和秩序。在南宋末年这个特定的历史背景下，武林江湖与政治军事交织，形成了一个丰富多彩的世界。
+            </p>
+            
+            <p class="text-lg mb-6">
+                金庸先生通过丐帮、全真教、桃花岛等不同门派的描绘，以及"天下五绝"等顶尖高手的塑造，构建了一个层次分明、派系复杂的江湖格局，反映了中国传统社会的组织形态和价值观念。
+            </p>
+            
+            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 mb-8">
+                <p class="italic">
+                    江湖之远近，岂在山水之间哉？
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 门派势力 -->
+    <section class="bg-stone-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-2xl font-bold mb-8 border-b border-amber-200 pb-2">主要门派势力</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- 丐帮 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-amber-800">丐帮</h3>
+                        </div>
+                        
+                        <p class="mb-4 text-stone-600">
+                            天下第一大帮，势力遍布全国，号称万人之众，分为净衣派和污衣派。丐帮以行侠仗义为宗旨，历代以来为百姓做了许多好事，在民间拥有极高的声望。
+                        </p>
+                        
+                        <div class="text-sm text-stone-500">
+                            <p><strong>总舵地点：</strong>无固定总舵，流动于各地</p>
+                            <p><strong>帮主：</strong>洪七公（前任）</p>
+                            <p><strong>核心成员：</strong>鲁有脚、史伯威等</p>
+                            <p><strong>特点：</strong>行侠仗义，维护民间正义</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 全真教 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-amber-800">全真教</h3>
+                        </div>
+                        
+                        <p class="mb-4 text-stone-600">
+                            道家正宗，由王重阳创立于终南山，以修道养性、济世救人为宗旨。全真教推崇内外双修，讲究修身养性，在江湖上享有极高声誉，是北方最具影响力的门派之一。
+                        </p>
+                        
+                        <div class="text-sm text-stone-500">
+                            <p><strong>总舵地点：</strong>终南山重阳宫</p>
+                            <p><strong>掌门：</strong>王重阳（创始人，已故）</p>
+                            <p><strong>核心成员：</strong>丘处机、马钰等全真七子</p>
+                            <p><strong>特点：</strong>修道养性，重视内功心法</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 桃花岛 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-amber-800">桃花岛</h3>
+                        </div>
+                        
+                        <p class="mb-4 text-stone-600">
+                            由黄药师创立的小型门派，位于东海孤岛上。黄药师精通奇门遁甲、琴棋书画和各种武学，桃花岛虽人数不多，但因黄药师的超凡武功和诡异手段，在武林中享有崇高地位。
+                        </p>
+                        
+                        <div class="text-sm text-stone-500">
+                            <p><strong>总舵地点：</strong>东海桃花岛</p>
+                            <p><strong>掌门：</strong>黄药师</p>
+                            <p><strong>核心成员：</strong>黄蓉、陈玄风、梅超风</p>
+                            <p><strong>特点：</strong>诡异多变，融合武学与奇门遁甲</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 白驼山 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-amber-800">白驼山</h3>
+                        </div>
+                        
+                        <p class="mb-4 text-stone-600">
+                            位于西域的一个势力，由欧阳锋掌控，以用毒和蛤蟆功闻名。白驼山与正派多有冲突，在江湖上属于邪派势力，但因欧阳锋的超强武功，无人敢轻易招惹。
+                        </p>
+                        
+                        <div class="text-sm text-stone-500">
+                            <p><strong>总舵地点：</strong>西域白驼山</p>
+                            <p><strong>掌门：</strong>欧阳锋</p>
+                            <p><strong>核心成员：</strong>欧阳克</p>
+                            <p><strong>特点：</strong>精通用毒，武功阴毒狠辣</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 大理段氏 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-amber-800">大理段氏</h3>
+                        </div>
+                        
+                        <p class="mb-4 text-stone-600">
+                            大理国皇室，虽为政权，但其家传武功在江湖上享有盛名。一阳指和六脉神剑是其代表性武功，段氏一族大多崇尚佛法，讲究慈悲为怀，与中原武林多有往来。
+                        </p>
+                        
+                        <div class="text-sm text-stone-500">
+                            <p><strong>总舵地点：</strong>大理皇宫</p>
+                            <p><strong>代表人物：</strong>段智兴(一灯大师)</p>
+                            <p><strong>特点：</strong>佛法武功并重，讲求慈悲济世</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 铁掌帮 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-amber-800">铁掌帮</h3>
+                        </div>
+                        
+                        <p class="mb-4 text-stone-600">
+                            以铁掌功闻名的门派，由裘千仞领导。铁掌帮与丐帮势如水火，多有冲突。帮众以铁掌功为主要武学，掌力沉重，能摧金断石。
+                        </p>
+                        
+                        <div class="text-sm text-stone-500">
+                            <p><strong>总舵地点：</strong>江南一带</p>
+                            <p><strong>帮主：</strong>裘千仞</p>
+                            <p><strong>特点：</strong>铁掌功威力巨大，与丐帮敌对</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 江湖规则 -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6 border-b border-amber-200 pb-2">江湖规则与准则</h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-xl font-bold mb-4 text-amber-800">江湖道义</h3>
+                
+                <p class="mb-4 text-stone-600">
+                    《射雕英雄传》中的江湖虽然混乱，但仍有一套不成文的规则与道义准则，维系着武林秩序：
+                </p>
+                
+                <ul class="list-disc pl-6 space-y-3 text-stone-600">
+                    <li>
+                        <strong>敬重师门</strong> - 尊师重道是江湖的基本准则，背叛师门被视为大逆不道，如梅超风和陈玄风因背叛黄药师而被废去武功。
+                    </li>
+                    <li>
+                        <strong>言出必行</strong> - 江湖中人讲究信义，一言既出驷马难追，如江南七怪与丘处机的十八年之约。
+                    </li>
+                    <li>
+                        <strong>公平较量</strong> - 武林中人比武讲究光明正大，偷袭暗算、以多欺少被视为卑鄙行为。
+                    </li>
+                    <li>
+                        <strong>慎用毒药</strong> - 正派人士通常不使用毒药，使用毒药被视为不光明磊落的手段。
+                    </li>
+                    <li>
+                        <strong>尊重前辈</strong> - 江湖讲究论资排辈，晚辈应当尊重前辈，对武功高强的前辈更是如此。
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4 text-amber-800">江湖秩序</h3>
+                
+                <p class="mb-4 text-stone-600">
+                    江湖中的秩序主要通过以下方式维持：
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold text-amber-700 mb-2">武功高低</h4>
+                        <p class="text-stone-600 text-sm">
+                            在江湖中，武功高低往往决定了地位和话语权。"天下五绝"等顶尖高手拥有极高声望，能够影响江湖大势。如王重阳在世时，正派武林以他为首；洪七公则是丐帮的精神领袖。
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-amber-700 mb-2">门派规矩</h4>
+                        <p class="text-stone-600 text-sm">
+                            各大门派都有自己的规矩和戒律，用以约束门下弟子。如全真教强调清修，丐帮强调侠义。这些规矩既是门派传承的基础，也是维持江湖秩序的重要力量。
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-amber-700 mb-2">武林盟会</h4>
+                        <p class="text-stone-600 text-sm">
+                            重大事件发生时，各派会举行武林大会商议对策，如华山论剑就是一次重要的武林盛会。这些盟会既是切磋武艺的场合，也是解决江湖纷争的平台。
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-amber-700 mb-2">江湖声誉</h4>
+                        <p class="text-stone-600 text-sm">
+                            一个人在江湖上的声誉至关重要，行侠仗义者受人敬重，为非作歹者则会被唾弃。即使是欧阳锋这样的"邪派"人物，也有自己的行事准则和骄傲。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 重要地点 -->
+    <section class="bg-amber-900/10 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-2xl font-bold mb-8 border-b border-amber-200 pb-2 text-center">江湖重要地点</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- 牛家村 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="h-40 bg-amber-100 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-amber-700 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                            </svg>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-2 text-amber-800">牛家村</h3>
+                            <p class="text-sm text-stone-600">
+                                故事的起点，郭啸天与杨铁心隐居之地，也是郭靖与杨康的出生地。这里发生的悲剧成为了整个故事的导火索。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 蒙古草原 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="h-40 bg-amber-100 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-amber-700 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-2 text-amber-800">蒙古草原</h3>
+                            <p class="text-sm text-stone-600">
+                                郭靖成长的地方，也是他习武的开始。在这里他结识了成吉思汗，学会了骑射，并被江南七怪发现和教导。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 桃花岛 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="h-40 bg-amber-100 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-amber-700 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-2 text-amber-800">桃花岛</h3>
+                            <p class="text-sm text-stone-600">
+                                黄药师的隐居之地，布满机关和陷阱。岛上桃花盛开，景色优美，但外人难以靠近。郭靖在此学艺，与黄蓉感情加深。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 华山 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="h-40 bg-amber-100 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-amber-700 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-2 text-amber-800">华山</h3>
+                            <p class="text-sm text-stone-600">
+                                华山论剑的举办地，五绝在此切磋比试，决定武林至尊。华山也是全真教重要活动地点之一。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 嘉兴烟雨楼 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="h-40 bg-amber-100 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-amber-700 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-2 text-amber-800">嘉兴烟雨楼</h3>
+                            <p class="text-sm text-stone-600">
+                                多次重要事件发生地，郭靖与杨康在此相认，也是众人争夺九阴真经的场所之一。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 襄阳城 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="h-40 bg-amber-100 flex items-center justify-center">
+                            <svg class="w-20 h-20 text-amber-700 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-2 text-amber-800">襄阳城</h3>
+                            <p class="text-sm text-stone-600">
+                                故事结尾，郭靖和黄蓉决定留守襄阳，抵抗蒙古大军。这是《射雕英雄传》与续集《神雕侠侣》的重要连接点。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 江湖与历史 -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6 border-b border-amber-200 pb-2">江湖与历史的交织</h2>
+            
+            <p class="text-lg mb-6 text-stone-600">
+                《射雕英雄传》的特色之一是将虚构的武侠江湖与真实的历史背景相结合，形成了一个既有历史感又充满想象力的世界：
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">南宋与金国的对峙</h3>
+                    <p class="text-stone-600">
+                        小说背景设定在南宋末年，宋、金、蒙三国相争的时代。靖康之耻后，南宋偏安江南，与金国长期对峙。这一历史背景为故事提供了丰富的冲突元素。
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">成吉思汗与蒙古崛起</h3>
+                    <p class="text-stone-600">
+                        小说中的成吉思汗是真实历史人物，郭靖在蒙古成长期间与之相识，并参与了蒙古的崛起过程。这使得小说具有更强的历史纵深感。
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">岳飞与武穆遗书</h3>
+                    <p class="text-stone-600">
+                        岳飞是南宋著名爱国将领，小说中的"武穆遗书"成为重要的武学秘籍，郭靖也将岳飞视为精神楷模，体现了小说的爱国主题。
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">江湖与朝廷的关系</h3>
+                    <p class="text-stone-600">
+                        小说中的江湖与朝廷既有对立又有合作。郭靖最终选择留守襄阳，将个人武艺用于国家大义，体现了武侠精神与爱国情怀的统一。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-stone-900 text-stone-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-stone-100">射雕英雄传</h3>
+                    <p class="mb-4">
+                        金庸先生的不朽经典，一部荡气回肠的武侠传奇
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-amber-300 transition-colors">首页</a></li>
+                        <li><a href="story.html" class="hover:text-amber-300 transition-colors">故事</a></li>
+                        <li><a href="characters.html" class="hover:text-amber-300 transition-colors">人物</a></li>
+                        <li><a href="martial_arts.html" class="hover:text-amber-300 transition-colors">武学</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">更多内容</h3>
+                    <ul class="space-y-2">
+                        <li><a href="jianghu.html" class="hover:text-amber-300 transition-colors">江湖</a></li>
+                        <li><a href="culture.html" class="hover:text-amber-300 transition-colors">文化</a></li>
+                        <li><a href="appreciation.html" class="hover:text-amber-300 transition-colors">赏析</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">关于本站</h3>
+                    <p class="mb-4">
+                        本网站致力于为金庸武侠小说《射雕英雄传》爱好者提供全面的资料与赏析
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-stone-700 mt-8 pt-8 text-center text-sm">
+                <p>© 2023 射雕英雄传资料网 | 本站内容仅供学习参考，相关版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

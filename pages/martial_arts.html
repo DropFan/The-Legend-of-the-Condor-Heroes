@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>武学系统 - 射雕英雄传</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="font-sans bg-stone-50 text-stone-800">
+    <!-- 顶部导航 -->
+    <header class="bg-amber-900/90 text-stone-100 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L14.5 9H21L15.5 13.5L17.5 20.5L12 16L6.5 20.5L8.5 13.5L3 9H9.5L12 2Z" fill="currentColor"/>
+                    </svg>
+                    <a href="../index.html" class="text-2xl font-bold tracking-wider">射雕英雄传</a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="story.html" class="hover:text-amber-200 transition-colors">故事</a>
+                    <a href="characters.html" class="hover:text-amber-200 transition-colors">人物</a>
+                    <a href="martial_arts.html" class="text-amber-200 border-b-2 border-amber-200 pb-1">武学</a>
+                    <a href="jianghu.html" class="hover:text-amber-200 transition-colors">江湖</a>
+                    <a href="culture.html" class="hover:text-amber-200 transition-colors">文化</a>
+                    <a href="appreciation.html" class="hover:text-amber-200 transition-colors">赏析</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-stone-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-amber-900 text-stone-100">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="story.html" class="py-2 hover:text-amber-200 transition-colors">故事</a>
+                <a href="characters.html" class="py-2 hover:text-amber-200 transition-colors">人物</a>
+                <a href="martial_arts.html" class="py-2 text-amber-200">武学</a>
+                <a href="jianghu.html" class="py-2 hover:text-amber-200 transition-colors">江湖</a>
+                <a href="culture.html" class="py-2 hover:text-amber-200 transition-colors">文化</a>
+                <a href="appreciation.html" class="py-2 hover:text-amber-200 transition-colors">赏析</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <div class="bg-amber-900/10 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">武学系统</h1>
+            <p class="text-xl text-stone-600 max-w-3xl mx-auto">
+                《射雕英雄传》中的武功绝学、心法招式与武学流派
+            </p>
+        </div>
+    </div>
+
+    <!-- 武学概述 -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6 border-b border-amber-200 pb-2">武学概述</h2>
+            
+            <p class="text-lg mb-4">
+                《射雕英雄传》中构建了一个庞大而系统的武学世界，涵盖内功心法、拳脚功夫、兵器使用、轻功身法、奇门遁甲等多个方面。这些武功不仅是人物间争斗的手段，更是人物性格和门派风格的体现。
+            </p>
+            
+            <p class="text-lg mb-6">
+                小说中的武学体系具有鲜明的层次性，从基础功夫到顶级绝学，从正派武功到邪派武学，形成了一个多元而丰富的武侠世界。
+            </p>
+            
+            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 mb-8">
+                <p class="italic">
+                    "降龙十八掌"、"九阴真经"、"蛤蟆功"、"打狗棒法"等绝学不仅是武功招式的集合，更是不同人生哲学和武道思想的体现。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 顶级绝学 -->
+    <section class="bg-stone-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold mb-8 border-b border-amber-200 pb-2">顶级绝学</h2>
+                
+                <div class="space-y-8">
+                    <!-- 九阴真经 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-amber-800">九阴真经</h3>
+                        
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-2/3 pr-0 md:pr-6">
+                                <p class="mb-4">
+                                    《九阴真经》是黄裳所著的武学宝典，集天下武学之大成，内含精深的内功心法和多种绝世武功，堪称武学之最。
+                                </p>
+                                
+                                <p class="mb-4">
+                                    经书分为上下两卷，上卷为内功心法，下卷为招式变化。修炼此经可大幅提升内力并领悟诸多精妙武功。
+                                </p>
+                                
+                                <div class="text-sm text-stone-500 mt-4">
+                                    <p><strong>主要特点：</strong>包罗万象，融会贯通，修炼难度极高</p>
+                                    <p><strong>主要使用者：</strong>黄裳(创始)、郭靖(部分)、欧阳锋(部分)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="md:w-1/3 mt-4 md:mt-0 bg-amber-50 rounded-lg p-4">
+                                <h4 class="font-bold text-amber-700 mb-2">主要招式</h4>
+                                <ul class="list-disc list-inside text-sm space-y-1 text-stone-600">
+                                    <li>白蛇吐信</li>
+                                    <li>玉女穿梭</li>
+                                    <li>灵蛇拳法</li>
+                                    <li>九阴白骨爪</li>
+                                    <li>摧心掌</li>
+                                    <li>银索横挥</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 降龙十八掌 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-amber-800">降龙十八掌</h3>
+                        
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-2/3 pr-0 md:pr-6">
+                                <p class="mb-4">
+                                    丐帮镇帮之宝，刚猛无比的掌法，是天下最刚猛的阳刚武学。此掌法招式看似简单，实则精深奥妙，需要深厚内力支撑。
+                                </p>
+                                
+                                <p class="mb-4">
+                                    每一掌都有其特定的名称和意境，掌法大开大合，气势恢宏，有"降龙伏虎"之威。是丐帮历代相传的不传之秘。
+                                </p>
+                                
+                                <div class="text-sm text-stone-500 mt-4">
+                                    <p><strong>主要特点：</strong>刚猛阳刚，大开大合，气势恢宏</p>
+                                    <p><strong>主要使用者：</strong>洪七公、郭靖、黄蓉(部分)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="md:w-1/3 mt-4 md:mt-0 bg-amber-50 rounded-lg p-4">
+                                <h4 class="font-bold text-amber-700 mb-2">主要招式</h4>
+                                <ul class="list-disc list-inside text-sm space-y-1 text-stone-600">
+                                    <li>亢龙有悔</li>
+                                    <li>飞龙在天</li>
+                                    <li>见龙在田</li>
+                                    <li>潜龙勿用</li>
+                                    <li>双龙取水</li>
+                                    <li>神龙摆尾</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 打狗棒法 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-amber-800">打狗棒法</h3>
+                        
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-2/3 pr-0 md:pr-6">
+                                <p class="mb-4">
+                                    丐帮帮主的象征，只有历代帮主才能习得的绝技。棒法精妙绝伦，变化多端，既可刚猛进击，又能柔韧防守，实为一门上乘武学。
+                                </p>
+                                
+                                <p class="mb-4">
+                                    此棒法需配合特制的打狗棒使用，棒身由数节相连，可随意伸缩，增加了招式的变化和攻击范围。
+                                </p>
+                                
+                                <div class="text-sm text-stone-500 mt-4">
+                                    <p><strong>主要特点：</strong>精妙多变，刚柔并济，伸缩自如</p>
+                                    <p><strong>主要使用者：</strong>洪七公、黄蓉</p>
+                                </div>
+                            </div>
+                            
+                            <div class="md:w-1/3 mt-4 md:mt-0 bg-amber-50 rounded-lg p-4">
+                                <h4 class="font-bold text-amber-700 mb-2">主要招式</h4>
+                                <ul class="list-disc list-inside text-sm space-y-1 text-stone-600">
+                                    <li>棒打狗头</li>
+                                    <li>恶狗拦路</li>
+                                    <li>迎风急转</li>
+                                    <li>狗急跳墙</li>
+                                    <li>狗爬残壁</li>
+                                    <li>天下无狗</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 蛤蟆功 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-amber-800">蛤蟆功</h3>
+                        
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:w-2/3 pr-0 md:pr-6">
+                                <p class="mb-4">
+                                    西域奇功，由欧阳锋所创，是一门霸道阴毒的内功。修炼者需要适应毒物，身形逐渐变得像蛤蟆，可蹲跳如蛙，发力如蛤蟆吐水。
+                                </p>
+                                
+                                <p class="mb-4">
+                                    此功越练越强，欧阳锋晚年蛤蟆功已达极高境界，能与降龙十八掌势均力敌，是一门威力极大的武功。
+                                </p>
+                                
+                                <div class="text-sm text-stone-500 mt-4">
+                                    <p><strong>主要特点：</strong>阴狠毒辣，力道雄浑，有如蛤蟆吐气</p>
+                                    <p><strong>主要使用者：</strong>欧阳锋、欧阳克(部分)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="md:w-1/3 mt-4 md:mt-0 bg-amber-50 rounded-lg p-4">
+                                <h4 class="font-bold text-amber-700 mb-2">主要招式</h4>
+                                <ul class="list-disc list-inside text-sm space-y-1 text-stone-600">
+                                    <li>蛤蟆吐气</li>
+                                    <li>蛤蟆扑食</li>
+                                    <li>蛤蟆跃墙</li>
+                                    <li>毒蟾吞日</li>
+                                    <li>青蛙点水</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 门派武学 -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-8 border-b border-amber-200 pb-2">门派武学</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 全真教 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">全真教武学</h3>
+                    <p class="text-stone-600 mb-4">
+                        全真教武学以道家思想为基础，主修内功心法，讲求修身养性，以柔克刚。全真剑法灵动飘逸，有如行云流水，剑招多变且富有哲理。
+                    </p>
+                    <div class="text-sm text-stone-500">
+                        <p><strong>代表武功：</strong>先天功、全真剑法、玄门剑法</p>
+                        <p><strong>代表人物：</strong>王重阳、丘处机、马钰等全真七子</p>
+                    </div>
+                </div>
+                
+                <!-- 桃花岛 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">桃花岛武学</h3>
+                    <p class="text-stone-600 mb-4">
+                        桃花岛武学由黄药师所创，融合了武学、医术、奇门遁甲等多种学问。武功招式诡异多变，出人意料，往往带有音律、琴棋书画等元素，讲究巧劲和精准。
+                    </p>
+                    <div class="text-sm text-stone-500">
+                        <p><strong>代表武功：</strong>落英神剑掌、弹指神通、兰花拂穴手</p>
+                        <p><strong>代表人物：</strong>黄药师、黄蓉、陈玄风、梅超风</p>
+                    </div>
+                </div>
+                
+                <!-- 丐帮 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">丐帮武学</h3>
+                    <p class="text-stone-600 mb-4">
+                        丐帮武功刚猛为主，讲究实用性和威力，适合野外和群战。其中以降龙十八掌和打狗棒法最为著名，前者为天下最刚猛的掌法，后者则变化多端，两者相辅相成。
+                    </p>
+                    <div class="text-sm text-stone-500">
+                        <p><strong>代表武功：</strong>降龙十八掌、打狗棒法、逍遥游</p>
+                        <p><strong>代表人物：</strong>洪七公、鲁有脚、史伯威</p>
+                    </div>
+                </div>
+                
+                <!-- 白驼山 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">白驼山武学</h3>
+                    <p class="text-stone-600 mb-4">
+                        白驼山武功以阴毒著称，多涉及用毒和奇门功法。其中蛤蟆功最为有名，此外还有擅长远攻的银丝鞭法和各种毒功。白驼派武功讲求快准狠，往往出其不意。
+                    </p>
+                    <div class="text-sm text-stone-500">
+                        <p><strong>代表武功：</strong>蛤蟆功、银丝鞭法、蛇毒掌</p>
+                        <p><strong>代表人物：</strong>欧阳锋、欧阳克</p>
+                    </div>
+                </div>
+                
+                <!-- 古墓派 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">大理段氏</h3>
+                    <p class="text-stone-600 mb-4">
+                        大理段氏武功深受佛门影响，以柔和为主，内外兼修。一阳指为其代表，此外六脉神剑更是绝世武功，需深厚内力支撑，能以指力外放伤敌。
+                    </p>
+                    <div class="text-sm text-stone-500">
+                        <p><strong>代表武功：</strong>一阳指、六脉神剑</p>
+                        <p><strong>代表人物：</strong>段智兴(一灯大师)</p>
+                    </div>
+                </div>
+                
+                <!-- 江南七怪 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">江南七怪</h3>
+                    <p class="text-stone-600 mb-4">
+                        江南七怪武功虽不在一流，但各具特色，七人配合默契，能发挥出超越个人的战力。各人擅长不同兵器和技法，从柯镇恶的铁掌到韩小莹的金钩，覆盖多种战斗风格。
+                    </p>
+                    <div class="text-sm text-stone-500">
+                        <p><strong>代表武功：</strong>柯氏铁掌、朱氏剑法、韩氏金钩</p>
+                        <p><strong>代表人物：</strong>柯镇恶、朱聪、韩宝驹等七怪</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特殊武功 -->
+    <section class="bg-amber-900/10 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold mb-8 border-b border-amber-200 pb-2">独门绝技</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- 左右互搏术 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-3 text-amber-800">左右互搏术</h3>
+                        <p class="text-stone-600 mb-3">
+                            由周伯通所创，能使修炼者左右手分别使用不同武功，如同两人同时出手，大大提升战斗力。
+                        </p>
+                        <div class="text-sm text-stone-500">
+                            <p><strong>创始人：</strong>周伯通</p>
+                            <p><strong>主要使用者：</strong>周伯通、郭靖</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 一阳指 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-3 text-amber-800">一阳指</h3>
+                        <p class="text-stone-600 mb-3">
+                            大理段氏家传武功，以一阳破万阴，指力精纯刚猛，点穴功夫极为精准，需深厚内力支持。
+                        </p>
+                        <div class="text-sm text-stone-500">
+                            <p><strong>创始人：</strong>段氏先祖</p>
+                            <p><strong>主要使用者：</strong>段智兴(一灯大师)</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 弹指神通 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-3 text-amber-800">弹指神通</h3>
+                        <p class="text-stone-600 mb-3">
+                            黄药师所创，以指力弹射暗器或直接伤敌，指力精准且威力极大，是桃花岛的招牌武功之一。
+                        </p>
+                        <div class="text-sm text-stone-500">
+                            <p><strong>创始人：</strong>黄药师</p>
+                            <p><strong>主要使用者：</strong>黄药师、黄蓉</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 空明拳 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-3 text-amber-800">空明拳</h3>
+                        <p class="text-stone-600 mb-3">
+                            全真派拳法，讲究"以无为有，以柔克刚"，拳势灵活多变，有道家阴阳平衡之妙。
+                        </p>
+                        <div class="text-sm text-stone-500">
+                            <p><strong>创始人：</strong>王重阳</p>
+                            <p><strong>主要使用者：</strong>全真七子</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 先天功 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-3 text-amber-800">先天功</h3>
+                        <p class="text-stone-600 mb-3">
+                            全真派内功心法，由王重阳所创，可使人返璞归真，回归先天状态，内力精纯绵长。
+                        </p>
+                        <div class="text-sm text-stone-500">
+                            <p><strong>创始人：</strong>王重阳</p>
+                            <p><strong>主要使用者：</strong>王重阳、全真七子</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 铁掌功 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-3 text-amber-800">铁掌功</h3>
+                        <p class="text-stone-600 mb-3">
+                            铁掌帮镇帮之宝，掌法刚猛沉重，练成后掌如铁石，威力巨大，能摧金断石。
+                        </p>
+                        <div class="text-sm text-stone-500">
+                            <p><strong>创始人：</strong>铁掌帮祖师</p>
+                            <p><strong>主要使用者：</strong>裘千仞、陈玄风</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 武学秘籍 -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6 border-b border-amber-200 pb-2">重要武学秘籍</h2>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <p class="text-lg text-stone-600 mb-6">
+                    《射雕英雄传》中有多部重要的武学秘籍，它们不仅是武功的载体，也是推动故事情节发展的重要元素。
+                </p>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full border-collapse">
+                        <thead>
+                            <tr class="bg-amber-50">
+                                <th class="border border-stone-300 px-4 py-2 text-left text-amber-800">秘籍名称</th>
+                                <th class="border border-stone-300 px-4 py-2 text-left text-amber-800">创作者</th>
+                                <th class="border border-stone-300 px-4 py-2 text-left text-amber-800">内容概述</th>
+                                <th class="border border-stone-300 px-4 py-2 text-left text-amber-800">主要拥有者</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-stone-300 px-4 py-2 font-medium">九阴真经</td>
+                                <td class="border border-stone-300 px-4 py-2">黄裳</td>
+                                <td class="border border-stone-300 px-4 py-2">集天下武学之大成，上卷为内功心法，下卷为招式变化</td>
+                                <td class="border border-stone-300 px-4 py-2">黄裳、郭靖、黄蓉</td>
+                            </tr>
+                            <tr class="bg-stone-50">
+                                <td class="border border-stone-300 px-4 py-2 font-medium">武穆遗书</td>
+                                <td class="border border-stone-300 px-4 py-2">岳飞</td>
+                                <td class="border border-stone-300 px-4 py-2">记载岳飞生平武学心得和兵法韬略</td>
+                                <td class="border border-stone-300 px-4 py-2">郭靖</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-stone-300 px-4 py-2 font-medium">降龙十八掌谱</td>
+                                <td class="border border-stone-300 px-4 py-2">丐帮祖师</td>
+                                <td class="border border-stone-300 px-4 py-2">记载丐帮镇帮绝学降龙十八掌的招式和要诀</td>
+                                <td class="border border-stone-300 px-4 py-2">历代丐帮帮主、洪七公</td>
+                            </tr>
+                            <tr class="bg-stone-50">
+                                <td class="border border-stone-300 px-4 py-2 font-medium">打狗棒谱</td>
+                                <td class="border border-stone-300 px-4 py-2">丐帮祖师</td>
+                                <td class="border border-stone-300 px-4 py-2">记载丐帮帮主专用的打狗棒法招式和心法</td>
+                                <td class="border border-stone-300 px-4 py-2">历代丐帮帮主、洪七公、黄蓉</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-stone-300 px-4 py-2 font-medium">桃花岛武功秘籍</td>
+                                <td class="border border-stone-300 px-4 py-2">黄药师</td>
+                                <td class="border border-stone-300 px-4 py-2">记载桃花岛独门武功，包括弹指神通、兰花拂穴手等</td>
+                                <td class="border border-stone-300 px-4 py-2">黄药师、黄蓉</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-stone-900 text-stone-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-stone-100">射雕英雄传</h3>
+                    <p class="mb-4">
+                        金庸先生的不朽经典，一部荡气回肠的武侠传奇
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-amber-300 transition-colors">首页</a></li>
+                        <li><a href="story.html" class="hover:text-amber-300 transition-colors">故事</a></li>
+                        <li><a href="characters.html" class="hover:text-amber-300 transition-colors">人物</a></li>
+                        <li><a href="martial_arts.html" class="hover:text-amber-300 transition-colors">武学</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">更多内容</h3>
+                    <ul class="space-y-2">
+                        <li><a href="jianghu.html" class="hover:text-amber-300 transition-colors">江湖</a></li>
+                        <li><a href="culture.html" class="hover:text-amber-300 transition-colors">文化</a></li>
+                        <li><a href="appreciation.html" class="hover:text-amber-300 transition-colors">赏析</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">关于本站</h3>
+                    <p class="mb-4">
+                        本网站致力于为金庸武侠小说《射雕英雄传》爱好者提供全面的资料与赏析
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-stone-700 mt-8 pt-8 text-center text-sm">
+                <p>© 2023 射雕英雄传资料网 | 本站内容仅供学习参考，相关版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

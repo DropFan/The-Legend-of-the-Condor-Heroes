@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文化背景 - 射雕英雄传</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="font-sans bg-stone-50 text-stone-800">
+    <!-- 顶部导航 -->
+    <header class="bg-amber-900/90 text-stone-100 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L14.5 9H21L15.5 13.5L17.5 20.5L12 16L6.5 20.5L8.5 13.5L3 9H9.5L12 2Z" fill="currentColor"/>
+                    </svg>
+                    <a href="../index.html" class="text-2xl font-bold tracking-wider">射雕英雄传</a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="story.html" class="hover:text-amber-200 transition-colors">故事</a>
+                    <a href="characters.html" class="hover:text-amber-200 transition-colors">人物</a>
+                    <a href="martial_arts.html" class="hover:text-amber-200 transition-colors">武学</a>
+                    <a href="jianghu.html" class="hover:text-amber-200 transition-colors">江湖</a>
+                    <a href="culture.html" class="text-amber-200 border-b-2 border-amber-200 pb-1">文化</a>
+                    <a href="appreciation.html" class="hover:text-amber-200 transition-colors">赏析</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-stone-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-amber-900 text-stone-100">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="story.html" class="py-2 hover:text-amber-200 transition-colors">故事</a>
+                <a href="characters.html" class="py-2 hover:text-amber-200 transition-colors">人物</a>
+                <a href="martial_arts.html" class="py-2 hover:text-amber-200 transition-colors">武学</a>
+                <a href="jianghu.html" class="py-2 hover:text-amber-200 transition-colors">江湖</a>
+                <a href="culture.html" class="py-2 text-amber-200">文化</a>
+                <a href="appreciation.html" class="py-2 hover:text-amber-200 transition-colors">赏析</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <div class="bg-amber-900/10 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">文化背景</h1>
+            <p class="text-xl text-stone-600 max-w-3xl mx-auto">
+                探索《射雕英雄传》中丰富的历史文化底蕴与时代背景
+            </p>
+        </div>
+    </div>
+
+    <!-- 历史背景 -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6 border-b border-amber-200 pb-2">历史背景</h2>
+            
+            <p class="text-lg mb-4">
+                《射雕英雄传》的故事背景设定在南宋末年（约1200年前后），宋、金、蒙古三国相争的动荡时代。这一特定的历史背景为小说提供了丰富的时代底色和冲突元素。
+            </p>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h3 class="text-xl font-bold mb-4 text-amber-800">南宋的历史背景</h3>
+                
+                <p class="mb-4 text-stone-600">
+                    1127年，金国攻陷北宋首都汴京（今开封），徽宗、钦宗被掳，史称"靖康之耻"。赵构南逃即位，建立南宋，定都临安（今杭州）。南宋与金国长期对峙，国势渐弱。
+                </p>
+                
+                <p class="text-stone-600">
+                    在这段历史中，岳飞等抗金将领成为民族英雄，但最终被奸臣秦桧所害。这段历史在小说中多次被提及，尤其是岳飞的事迹和《武穆遗书》，成为郭靖等正面人物的精神支柱。
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold mb-4 text-amber-800">蒙古崛起</h3>
+                
+                <p class="mb-4 text-stone-600">
+                    12世纪末至13世纪初，成吉思汗统一蒙古各部，建立强大的蒙古帝国，并开始向外扩张。小说中的郭靖在蒙古草原长大，与成吉思汗有深厚友谊，但最终选择回归中原，守卫襄阳。
+                </p>
+                
+                <p class="text-stone-600">
+                    蒙古大军最终攻灭金国，并在随后的几十年里征服南宋，这一历史进程在《射雕英雄传》及其续集《神雕侠侣》中有所体现。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 思想文化 -->
+    <section class="bg-stone-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold mb-8 border-b border-amber-200 pb-2">思想文化</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <!-- 儒家思想 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-amber-800">儒家思想</h3>
+                        </div>
+                        
+                        <p class="mb-4 text-stone-600">
+                            儒家思想是宋代主流文化思想，强调忠孝仁义、修身齐家治国平天下。在《射雕英雄传》中，郭靖就体现了儒家的忠义观念，他对国家、师长的忠诚，以及对朋友的义气。
+                        </p>
+                        
+                        <p class="text-stone-600">
+                            "侠之大者，为国为民"这一名言，正是儒家"以天下为己任"思想在武侠世界的体现。郭靖最终选择留守襄阳，抵抗蒙古大军，展现了家国情怀。
+                        </p>
+                    </div>
+                    
+                    <!-- 道家思想 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-amber-800">道家思想</h3>
+                        </div>
+                        
+                        <p class="mb-4 text-stone-600">
+                            道家思想在小说中主要通过全真教体现。王重阳创立的全真教以修道养性为宗旨，崇尚自然、无为而治。全真七子都是道家修行者，他们的武功也多体现道家思想，如"清静无为"的先天功。
+                        </p>
+                        
+                        <p class="text-stone-600">
+                            周伯通的性格天真无邪，不受世俗约束，也是道家"返璞归真"思想的体现。道家思想为小说增添了哲学深度，也是武侠世界的重要精神底色。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- 佛家思想 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-amber-800">佛家思想</h3>
+                        </div>
+                        
+                        <p class="mb-4 text-stone-600">
+                            佛家思想在小说中主要通过一灯大师（段智兴）体现。他从大理国王位上退下，出家为僧，深受佛法影响，讲求慈悲为怀、普度众生。
+                        </p>
+                        
+                        <p class="text-stone-600">
+                            一灯大师的武功一阳指也带有佛法色彩，以一阳破万阴，寓意佛光普照。佛家的因果报应观念在小说中也有体现，如梅超风、陈玄风背叛师门，最终落得悲惨下场。
+                        </p>
+                    </div>
+                    
+                    <!-- 侠义精神 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-start mb-4">
+                            <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-amber-800">侠义精神</h3>
+                        </div>
+                        
+                        <p class="mb-4 text-stone-600">
+                            侠义精神是中国武侠文化的核心，在《射雕英雄传》中得到充分体现。丐帮以行侠仗义为宗旨，洪七公乐善好施；江南七怪为报恩不远万里寻找郭靖；郭靖黄蓉路见不平，拔刀相助。
+                        </p>
+                        
+                        <p class="text-stone-600">
+                            侠义精神体现在"见义勇为、扶弱济贫、重义轻利、言而有信"等方面，是中国传统文化中的重要组成部分，也是武侠小说的精神内核。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社会风貌 -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6 border-b border-amber-200 pb-2">社会风貌</h2>
+            
+            <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h3 class="text-xl font-bold mb-4 text-amber-800">宋代社会</h3>
+                
+                <p class="mb-4 text-stone-600">
+                    南宋时期是中国封建社会的重要阶段，社会相对开放，商品经济发达，城市繁荣，文化多元。《射雕英雄传》中对南宋社会有较为丰富的描绘：
+                </p>
+                
+                <ul class="list-disc pl-6 space-y-3 text-stone-600">
+                    <li>
+                        <strong>城市繁华</strong> - 临安（今杭州）作为南宋首都，繁华热闹，商业发达。小说中对酒楼、茶馆、商铺的描写，反映了宋代城市的繁荣。
+                    </li>
+                    <li>
+                        <strong>文人风气</strong> - 宋代重视文化教育，科举制度发达。小说中的黄蓉博览群书，能写会画；杨康也接受了良好教育，体现了宋代的文化氛围。
+                    </li>
+                    <li>
+                        <strong>民间艺术</strong> - 宋代民间艺术发达，小说中的琴棋书画、诗词歌赋等文化艺术形式频繁出现，尤其是黄蓉精通多种艺术。
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold mb-4 text-amber-800">民族关系</h3>
+                
+                <p class="mb-4 text-stone-600">
+                    《射雕英雄传》中涉及宋、金、蒙古等多个民族，反映了复杂的民族关系：
+                </p>
+                
+                <ul class="list-disc pl-6 space-y-3 text-stone-600">
+                    <li>
+                        <strong>汉族与蒙古族</strong> - 郭靖在蒙古长大，与成吉思汗是朋友，但最终选择回归汉族身份，体现了复杂的民族认同。
+                    </li>
+                    <li>
+                        <strong>南宋与金国</strong> - 两国长期对峙，南宋对金国又恨又怕，小说中通过杨铁心、完颜洪烈等人物体现这种复杂关系。
+                    </li>
+                    <li>
+                        <strong>民族融合</strong> - 小说中也有不同民族和平共处、文化交流的内容，如郭靖在蒙古草原上受到蒙古族人的友善对待。
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 文学与艺术 -->
+    <section class="bg-amber-900/10 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold mb-8 border-b border-amber-200 pb-2">文学与艺术</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- 古典诗词 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-amber-800">古典诗词</h3>
+                        
+                        <p class="mb-4 text-stone-600">
+                            《射雕英雄传》中引用了大量古典诗词，既展示了宋代文人的风雅，也丰富了小说的文化内涵。如黄蓉常常吟诵诗词，郭靖也在学习中了解到不少诗词。
+                        </p>
+                        
+                        <div class="bg-amber-50 p-4 rounded">
+                            <p class="italic text-amber-800 text-center">
+                                "靖康耻，犹未雪；臣子恨，何时灭？<br>
+                                驾长车，踏破贺兰山缺。<br>
+                                壮志饥餐胡虏肉，笑谈渴饮匈奴血。<br>
+                                待从头，收拾旧山河，朝天阙。"
+                            </p>
+                            <p class="text-right text-sm mt-2">—— 岳飞《满江红》</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 琴棋书画 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-amber-800">琴棋书画</h3>
+                        
+                        <p class="mb-4 text-stone-600">
+                            琴棋书画是中国传统文人的四大技艺，在《射雕英雄传》中频繁出现。黄药师精通琴艺，甚至将音律融入武功；黄蓉精通棋艺，能下盲棋；书法和绘画也多次出现在小说场景中。
+                        </p>
+                        
+                        <p class="text-stone-600">
+                            这些文化艺术不仅是故事的点缀，更是人物性格和身份的象征，也体现了宋代文人雅士的生活方式和精神追求。
+                        </p>
+                    </div>
+                    
+                    <!-- 医术与毒理 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-amber-800">医术与毒理</h3>
+                        
+                        <p class="mb-4 text-stone-600">
+                            中医药学在《射雕英雄传》中扮演重要角色。黄蓉精通药理，能解百毒；欧阳锋精通用毒；郭靖也曾学习药理，救治伤患。
+                        </p>
+                        
+                        <p class="text-stone-600">
+                            小说中对草药、毒物的描述，体现了中国传统医学和本草学的知识，也是中国古代科学文化的重要组成部分。
+                        </p>
+                    </div>
+                    
+                    <!-- 奇门遁甲 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4 text-amber-800">奇门遁甲</h3>
+                        
+                        <p class="mb-4 text-stone-600">
+                            奇门遁甲是中国古代的一种术数学问，在《射雕英雄传》中主要通过黄药师和黄蓉体现。桃花岛上的机关陷阱，以及黄蓉多次运用奇门遁甲之术解决难题，都展示了这门古老学问的神奇。
+                        </p>
+                        
+                        <p class="text-stone-600">
+                            奇门遁甲融合了天文、地理、阴阳、五行等多种学问，是中国传统文化中独特的一部分，在小说中增添了神秘色彩。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 文化传承 -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6 border-b border-amber-200 pb-2">文化传承与价值观</h2>
+            
+            <p class="text-lg mb-6 text-stone-600">
+                《射雕英雄传》传承和弘扬了中国传统文化中的核心价值观，这些价值观通过人物的言行和故事情节得到体现：
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">忠义精神</h3>
+                    <p class="text-stone-600">
+                        郭靖忠于国家、忠于师长、忠于朋友，体现了中国传统的忠义精神。他最终选择留守襄阳，为国捐躯，展现了崇高的爱国情操。
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">仁爱之心</h3>
+                    <p class="text-stone-600">
+                        仁爱是儒家思想的核心。郭靖、黄蓉常常扶危济困，救助弱小；洪七公乐善好施；一灯大师普度众生，都体现了仁爱精神。
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">知行合一</h3>
+                    <p class="text-stone-600">
+                        知行合一是宋代理学的重要思想。郭靖虽然天资不高，但通过刻苦学习和不断实践，最终成为一代大侠，体现了知与行的统一。
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">重视传承</h3>
+                    <p class="text-stone-600">
+                        中国文化重视传承，师徒关系是重要纽带。小说中的各派武功都有严格的传承规则，如全真教的道法传承、丐帮的帮主传承等。
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">天人合一</h3>
+                    <p class="text-stone-600">
+                        天人合一是中国哲学的重要思想。小说中的高深武功都强调与自然的和谐，如全真派的先天功、黄药师对自然的体悟等。
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-3 text-amber-800">家国情怀</h3>
+                    <p class="text-stone-600">
+                        家国情怀是中国文化的重要特质。小说中多次出现爱国主题，如对岳飞精神的颂扬、对靖康之耻的愤慨、对民族大义的坚守等。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-stone-900 text-stone-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-stone-100">射雕英雄传</h3>
+                    <p class="mb-4">
+                        金庸先生的不朽经典，一部荡气回肠的武侠传奇
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-amber-300 transition-colors">首页</a></li>
+                        <li><a href="story.html" class="hover:text-amber-300 transition-colors">故事</a></li>
+                        <li><a href="characters.html" class="hover:text-amber-300 transition-colors">人物</a></li>
+                        <li><a href="martial_arts.html" class="hover:text-amber-300 transition-colors">武学</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">更多内容</h3>
+                    <ul class="space-y-2">
+                        <li><a href="jianghu.html" class="hover:text-amber-300 transition-colors">江湖</a></li>
+                        <li><a href="culture.html" class="hover:text-amber-300 transition-colors">文化</a></li>
+                        <li><a href="appreciation.html" class="hover:text-amber-300 transition-colors">赏析</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">关于本站</h3>
+                    <p class="mb-4">
+                        本网站致力于为金庸武侠小说《射雕英雄传》爱好者提供全面的资料与赏析
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-stone-700 mt-8 pt-8 text-center text-sm">
+                <p>© 2023 射雕英雄传资料网 | 本站内容仅供学习参考，相关版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

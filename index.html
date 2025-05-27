@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>射雕英雄传 - 金庸武侠世界</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-stone-50 text-stone-800">
+    <!-- 顶部导航 -->
+    <header class="bg-amber-900/90 text-stone-100 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L14.5 9H21L15.5 13.5L17.5 20.5L12 16L6.5 20.5L8.5 13.5L3 9H9.5L12 2Z" fill="currentColor"/>
+                    </svg>
+                    <a href="index.html" class="text-2xl font-bold tracking-wider">射雕英雄传</a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="pages/story.html" class="hover:text-amber-200 transition-colors">故事</a>
+                    <a href="pages/characters.html" class="hover:text-amber-200 transition-colors">人物</a>
+                    <a href="pages/martial_arts.html" class="hover:text-amber-200 transition-colors">武学</a>
+                    <a href="pages/jianghu.html" class="hover:text-amber-200 transition-colors">江湖</a>
+                    <a href="pages/culture.html" class="hover:text-amber-200 transition-colors">文化</a>
+                    <a href="pages/appreciation.html" class="hover:text-amber-200 transition-colors">赏析</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-stone-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-amber-900 text-stone-100">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="pages/story.html" class="py-2 hover:text-amber-200 transition-colors">故事</a>
+                <a href="pages/characters.html" class="py-2 hover:text-amber-200 transition-colors">人物</a>
+                <a href="pages/martial_arts.html" class="py-2 hover:text-amber-200 transition-colors">武学</a>
+                <a href="pages/jianghu.html" class="py-2 hover:text-amber-200 transition-colors">江湖</a>
+                <a href="pages/culture.html" class="py-2 hover:text-amber-200 transition-colors">文化</a>
+                <a href="pages/appreciation.html" class="py-2 hover:text-amber-200 transition-colors">赏析</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄封面 -->
+    <section class="hero-section bg-cover bg-center h-[70vh] flex items-center relative" style="background-image: url('https://pic.ibaotu.com/02/00/92/61S888piCMIn.jpg!ww7006');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="container mx-auto px-4 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-stone-50 mb-6 hero-title">射雕英雄传</h1>
+            <p class="text-xl md:text-2xl text-stone-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+                金庸武侠小说的不朽经典，南宋末年宋、金、蒙古三国相争的乱世中，郭靖、黄蓉的侠义传奇
+            </p>
+            <a href="pages/story.html" class="bg-amber-700 hover:bg-amber-800 text-white font-bold py-3 px-8 rounded-md inline-block transition-colors shadow-lg">
+                开始探索
+            </a>
+        </div>
+    </section>
+
+    <!-- 内容概览 -->
+    <section class="container mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4 section-title">侠之大者，为国为民</h2>
+            <p class="text-lg text-stone-600 max-w-3xl mx-auto">
+                《射雕英雄传》是金庸武侠小说的代表作之一，讲述了南宋年间，以郭靖、黄蓉为主角的侠义故事
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://k.sinaimg.cn/n/sinacn20121/743/w640h903/20190916/e051-ietnfsp6770899.jpg/w700d1q75cms.jpg" alt="射雕英雄传" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">故事背景</h3>
+                    <p class="text-stone-600 mb-4">
+                        南宋末年，宋、金、蒙古三国相争的时代，家国恩怨与江湖纷争交织的乱世
+                    </p>
+                    <a href="pages/story.html" class="text-amber-700 hover:text-amber-900 font-semibold inline-flex items-center">
+                        了解更多
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://i.epochtimes.com/assets/uploads/2010/10/1010160448502178.jpg" alt="射雕英雄传人物" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">主要人物</h3>
+                    <p class="text-stone-600 mb-4">
+                        郭靖、黄蓉、杨康、穆念慈，天下五绝以及江南七怪等丰富多彩的人物
+                    </p>
+                    <a href="pages/characters.html" class="text-amber-700 hover:text-amber-900 font-semibold inline-flex items-center">
+                        了解更多
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://img2.gujianchina.cn/202404/29/133814181.png" alt="射雕英雄传世界" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">武学世界</h3>
+                    <p class="text-stone-600 mb-4">
+                        九阴真经、降龙十八掌、蛤蟆功、打狗棒法等丰富的武学体系
+                    </p>
+                    <a href="pages/martial_arts.html" class="text-amber-700 hover:text-amber-900 font-semibold inline-flex items-center">
+                        了解更多
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 名言警句 -->
+    <section class="bg-amber-900/10 py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <svg class="w-12 h-12 mx-auto mb-6 text-amber-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                </svg>
+                <blockquote class="text-2xl md:text-3xl font-medium mb-8 quote">
+                    "侠之大者，为国为民。"
+                </blockquote>
+                <p class="text-lg text-stone-600">— 郭靖</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 门派介绍 -->
+    <section class="container mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4 section-title">江湖门派</h2>
+            <p class="text-lg text-stone-600 max-w-3xl mx-auto">
+                《射雕英雄传》中的江湖门派各具特色，形成了丰富多彩的武林世界
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="border border-stone-200 rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-bold mb-2 text-amber-800">丐帮</h3>
+                <p class="text-stone-600">
+                    天下第一大帮，以侠义为宗，分为净衣派和污衣派，洪七公是丐帮前任帮主。
+                </p>
+            </div>
+            
+            <div class="border border-stone-200 rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-bold mb-2 text-amber-800">全真教</h3>
+                <p class="text-stone-600">
+                    道家正宗，讲求内功心法，由王重阳创立，丘处机、马钰等为七子。
+                </p>
+            </div>
+            
+            <div class="border border-stone-200 rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-bold mb-2 text-amber-800">桃花岛</h3>
+                <p class="text-stone-600">
+                    黄药师自创门派，奇门遁甲与武学并重，以机关算尽见长。
+                </p>
+            </div>
+            
+            <div class="border border-stone-200 rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-bold mb-2 text-amber-800">白驼山庄</h3>
+                <p class="text-stone-600">
+                    欧阳锋的势力范围，以毒功闻名江湖，蛤蟆功是其招牌武学。
+                </p>
+            </div>
+            
+            <div class="border border-stone-200 rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-bold mb-2 text-amber-800">大理段氏</h3>
+                <p class="text-stone-600">
+                    大理国皇室，段誉的家族，一阳指与六脉神剑是其家传武学。
+                </p>
+            </div>
+            
+            <div class="border border-stone-200 rounded-lg p-6 bg-white hover:shadow-md transition-shadow">
+                <h3 class="text-xl font-bold mb-2 text-amber-800">铁掌帮</h3>
+                <p class="text-stone-600">
+                    裘千仞领导的门派，铁掌功为镇派绝学，与丐帮势如水火。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 天下五绝 -->
+    <section class="bg-amber-900/10 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 section-title">天下五绝</h2>
+                <p class="text-lg text-stone-600 max-w-3xl mx-auto">
+                    《射雕英雄传》中的武林顶尖高手，代表了不同的武学流派和人生哲学
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md text-center">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">东邪</h3>
+                        <p class="text-amber-800 font-medium mb-2">黄药师</p>
+                        <p class="text-stone-600 text-sm">
+                            桃花岛主，武功诡异奇特，精通奇门遁甲
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md text-center">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">西毒</h3>
+                        <p class="text-amber-800 font-medium mb-2">欧阳锋</p>
+                        <p class="text-stone-600 text-sm">
+                            白驼山庄主，蛤蟆功威力无穷，精通使毒
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md text-center">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">南帝</h3>
+                        <p class="text-amber-800 font-medium mb-2">一灯大师</p>
+                        <p class="text-stone-600 text-sm">
+                            大理前国王，出家为僧后自创一阳指
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md text-center">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">北丐</h3>
+                        <p class="text-amber-800 font-medium mb-2">洪七公</p>
+                        <p class="text-stone-600 text-sm">
+                            丐帮前帮主，降龙十八掌天下无敌
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md text-center">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">中神通</h3>
+                        <p class="text-amber-800 font-medium mb-2">王重阳</p>
+                        <p class="text-stone-600 text-sm">
+                            全真教创始人，武功深不可测
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 探索更多 -->
+    <section class="container mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4 section-title">探索更多</h2>
+            <p class="text-lg text-stone-600 max-w-3xl mx-auto">
+                深入了解《射雕英雄传》的方方面面，感受金庸先生笔下的武侠世界
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <a href="pages/culture.html" class="group block relative overflow-hidden rounded-lg h-60 shadow-md">
+                <img src="https://www.adyin.cn/uploads/allimg/191126/1-191126121U4302.jpg" alt="文化背景" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <div class="p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-amber-200 transition-colors">文化背景</h3>
+                        <p class="text-stone-200">
+                            探索《射雕英雄传》中的南宋文化与历史背景
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="pages/appreciation.html" class="group block relative overflow-hidden rounded-lg h-60 shadow-md">
+                <img src="https://pic.ibaotu.com/02/00/92/61S888piCMIn.jpg!ww7006" alt="文学赏析" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                    <div class="p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-amber-200 transition-colors">文学赏析</h3>
+                        <p class="text-stone-200">
+                            品味金庸先生的文学艺术与创作手法
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-stone-900 text-stone-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-stone-100">射雕英雄传</h3>
+                    <p class="mb-4">
+                        金庸先生的不朽经典，一部荡气回肠的武侠传奇
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-amber-300 transition-colors">首页</a></li>
+                        <li><a href="pages/story.html" class="hover:text-amber-300 transition-colors">故事</a></li>
+                        <li><a href="pages/characters.html" class="hover:text-amber-300 transition-colors">人物</a></li>
+                        <li><a href="pages/martial_arts.html" class="hover:text-amber-300 transition-colors">武学</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">更多内容</h3>
+                    <ul class="space-y-2">
+                        <li><a href="pages/jianghu.html" class="hover:text-amber-300 transition-colors">江湖</a></li>
+                        <li><a href="pages/culture.html" class="hover:text-amber-300 transition-colors">文化</a></li>
+                        <li><a href="pages/appreciation.html" class="hover:text-amber-300 transition-colors">赏析</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-stone-100">关于本站</h3>
+                    <p class="mb-4">
+                        本网站致力于为金庸武侠小说《射雕英雄传》爱好者提供全面的资料与赏析
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-stone-700 mt-8 pt-8 text-center text-sm">
+                <p>© 2023 射雕英雄传资料网 | 本站内容仅供学习参考，相关版权归原作者所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

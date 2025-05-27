@@ -1,0 +1,142 @@
+/* 自定义字体和全局样式 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+:root {
+    --color-primary: #92400e;
+    --color-primary-light: #b45309;
+    --color-secondary: #78350f;
+    --color-text: #44403c;
+    --color-text-light: #78716c;
+    --color-background: #fafaf9;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* 标题文字使用衬线字体，营造古典感 */
+h1, h2, h3, h4, h5, h6, .section-title, .hero-title, .quote {
+    font-family: 'Noto Serif SC', serif;
+}
+
+/* 英雄区域的特殊装饰效果 */
+.hero-title {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    letter-spacing: 0.05em;
+}
+
+/* 页面分节标题的装饰效果 */
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+
+/* 引用样式 */
+.quote {
+    position: relative;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.quote::before,
+.quote::after {
+    content: """;
+    font-size: 2em;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.quote::before {
+    left: -20px;
+    top: -10px;
+}
+
+.quote::after {
+    content: """;
+    right: -20px;
+    bottom: -10px;
+}
+
+/* 定制动画效果 */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .quote {
+        font-size: 1.5rem;
+    }
+    
+    .quote::before,
+    .quote::after {
+        display: none;
+    }
+}
+
+/* 自定义装饰元素 */
+.chinese-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2392400e' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* 特殊互动元素样式 */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.03);
+}
+
+/* 古典风格的卡片样式 */
+.classic-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.classic-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-3px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
